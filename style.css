@@ -282,7 +282,7 @@ section .title::after{
 /* services section styling */
 .services, .teams{
     color:#fff;
-    background: #111;
+    background-image:url("background.jpg");
 }
 .services .title::before,
 .teams .title::before{
