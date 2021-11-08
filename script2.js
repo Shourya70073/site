@@ -12,7 +12,7 @@ var form = document.getElementById("my-form");
         }
       }).then(response => {
         status.classList.add('myButton1')
-        status.innerHTML = "Success!";
+        status.innerHTML = "Great Success!";
         form.reset()
       }).catch(error => {
         status.innerHTML = "Oops! There was a problem submitting your form"
