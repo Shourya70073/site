@@ -279,25 +279,41 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
+                     <form action ="https://formspree.io/f/mayagkny"
+                    method="POST" id="my-form">
+                        <div class="dbl-field fields">
+                          <div class="field name">
+                            <input type="text" name="name" placeholder="Enter your name" required>
+                           
+                          </div>
+                          <div class="field email">
+                            <input type="email" name="_replyto" placeholder="Enter your email" required>
+                            
+                          </div>
                         </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                        <div class="dbl-field fields">
+                          <div class="field phone">
+                            <input type="text" name="phone" placeholder="Enter your phone(Optional)">
+                            
+                          </div>
+                          <div class="field website">
+                            <input type="text" name="website" placeholder="Enter your website(Optional)">
+                           
+                          </div>
                         </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        <div class="message field textarea">
+                          <textarea cols="30" rows="30" placeholder="Write your message" name="message" required></textarea>
+                          
                         </div>
-                        <div class="button-area">
-                            <button type="submit" class="send">Send message</button>
+                        
+                        
+                        <div class="button-area field">
+                          <button type="submit">Send Message</button>
+                          <br>
+                          <br>
+                          <span id="status"></span>
                         </div>
-                    </form>
+                      </form>
                 </div>
             </div>
         </div>
