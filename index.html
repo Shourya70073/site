@@ -16,6 +16,10 @@
 
 </head>
 <body>
+     <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
@@ -346,7 +350,11 @@
         <br>
         <span>Created By Shourya Srivastava  <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
     </footer>
-
+<script>
+        $(window).on("load",function(){
+            $(".loader-container").fadeOut(1000);
+        });
+    </script>
     <script src="script.js"></script>
      <script src="script2.js"></script>
     
