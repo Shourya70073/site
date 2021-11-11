@@ -11,7 +11,7 @@ var form = document.getElementById("my-form");
             'Accept': 'application/json'
         }
       }).then(response => {
-        alert("Your Form has been succesfully submitted, if your email id was wrong then your response will not be recorded.")
+        alert("Your Form has been succesfully submitted, if your email id was wrong then your response will not be recorded. NOTE:- IP address is also bieng shared with the owner of website, in order to handle abuse through forms")
         form.reset()
       }).catch(error => {
         alert( "Oops! There was a problem submitting your form")
