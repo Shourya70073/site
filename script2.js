@@ -11,11 +11,10 @@ var form = document.getElementById("my-form");
             'Accept': 'application/json'
         }
       }).then(response => {
-        status.classList.add('myButton1')
-        status.innerHTML = "Great Success!";
+        alert("Your Form has been succesfully submitted, if your email id was wrong then your response will not be recorded.")
         form.reset()
       }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
+        alert( "Oops! There was a problem submitting your form")
       });
     }
     form.addEventListener("submit", handleSubmit)
